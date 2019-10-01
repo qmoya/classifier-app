@@ -1,0 +1,9 @@
+.DS_Store
+/.build
+/*.xcodeproj
+.vscode/
+*.ipa
+*.xcarchive/
+*.export/
+build/
+*.app.dSYM.zip

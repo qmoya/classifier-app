@@ -1,0 +1,15 @@
+--binarygrouping none
+--commas inline
+--comments ignore
+--decimalgrouping none
+--hexgrouping none
+--ifdef outdent
+--octalgrouping none
+--patternlet inline
+--stripunusedargs closure-only
+--wraparguments beforefirst
+--wrapcollections beforefirst
+--exclude Carthage
+--exclude Vendor
+--indent tabs
+--header strip
