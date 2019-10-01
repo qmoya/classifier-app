@@ -1,13 +1,13 @@
 import CoreDataStorage
 import CoreMLClassifier
 import Foundation
-import GIFZylMaker
+import SimpleZylMaker
 import Interactor
 import SystemMediaLibrary
 
 extension Interactor {
 	static func build() -> Interactor {
-		let zylMaker = GIFZylMaker()
+		let zylMaker = SimpleZylMaker()
 		let storage = CoreDataStorage()
 		let classifier = CoreMLClassifier()
 		let mediaLibrary = SystemMediaLibrary()

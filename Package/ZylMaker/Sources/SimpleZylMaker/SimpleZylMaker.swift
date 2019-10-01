@@ -1,28 +1,7 @@
 import Foundation
 import ZylMaker
 
-struct Image {
-	let data: Data
-	let date: Date
-}
-
-struct GIFProxy: Proxy {
-	let images: [Image]
-
-	var heroData: Data {
-		return images[0].data
-	}
-
-	var numberOfPhotos: Int {
-		return images.count
-	}
-
-	func data(forPhotoAt index: Int) -> Data {
-		return images[index].data
-	}
-}
-
-public class GIFZylMaker: ZylMaker {
+public class SimpleZylMaker: ZylMaker {
 	public var dataSource: ZylMakerDataSource?
 
 	public weak var delegate: ZylMakerDelegate?

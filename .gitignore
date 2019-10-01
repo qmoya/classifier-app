@@ -7,3 +7,5 @@
 *.export/
 build/
 *.app.dSYM.zip
+.build/
+.swiftpm/

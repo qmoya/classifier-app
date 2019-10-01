@@ -5,22 +5,6 @@ import Storage
 import UIKit
 import ZylMaker
 
-public struct InteractorPhoto {
-	let data: Data
-}
-
-public struct InteractorZyl {
-	public let date: Date
-	public let hero: Data
-	public let photos: [InteractorPhoto]
-
-	init(storedZyl: StoredZyl) {
-		date = storedZyl.date ?? Date.distantPast
-		hero = Data()
-		photos = storedZyl.storedPhotos.map { InteractorPhoto(data: $0.data ?? Data()) }
-	}
-}
-
 public protocol InteractorDelegate: class {
 	func interactorDidBeginClassifying(_ interactor: Interactor)
 	func interactorWillCreateZyl(_ interactor: Interactor)

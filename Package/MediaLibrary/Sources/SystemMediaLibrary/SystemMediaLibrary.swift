@@ -1,6 +1,11 @@
 import MediaLibrary
 import Photos
+#if canImport(UIKit)
 import UIKit
+#elseif canImport(AppKit)
+import AppKit
+#endif
+
 
 public class SystemMediaLibrary: MediaLibrary {
 	public var isAuthorized: Bool {

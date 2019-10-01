@@ -2,11 +2,13 @@ import CoreData
 import Foundation
 import Storage
 
-class PersistentContainer: NSPersistentContainer {}
-
-extension Asset: StoredAsset {}
-
 public class CoreDataStorage: Storage {
+    var viewContext: NSManagedObjectContext { persistentContainer.viewContext }
+
+	public func createPhoto(forZylWithUUID uuid: UUID) {}
+
+	public init() {}
+
 	public func fetchRandomAssetGroup() -> StoredAssetGroup? {
 		let req = AssetGroup.randomRecordRequest
 		do {
@@ -26,8 +28,6 @@ public class CoreDataStorage: Storage {
 		return group
 	}
 
-	var viewContext: NSManagedObjectContext { persistentContainer.viewContext }
-
 	public func createPhoto(date: Date, data: Data, zyl: StoredZyl) -> StoredPhoto {
 		guard let zyl = zyl as? Zyl else { return Photo() }
 		let photo = Photo(context: viewContext)
@@ -37,8 +37,7 @@ public class CoreDataStorage: Storage {
 
 	public func createZyl(date: Date) -> StoredZyl {
 		let zyl = Zyl(context: viewContext)
-		let uuid = UUID()
-		zyl.uuid = uuid
+		zyl.uuid = UUID()
 		zyl.date = date
 		return zyl
 	}
@@ -67,7 +66,7 @@ public class CoreDataStorage: Storage {
 		return container
 	}()
 
-	func saveContext() {
+	internal func saveContext() {
 		let context = persistentContainer.viewContext
 		if context.hasChanges {
 			do {
@@ -78,8 +77,4 @@ public class CoreDataStorage: Storage {
 			}
 		}
 	}
-
-	public func createPhoto(forZylWithUUID uuid: UUID) {}
-
-	public init() {}
 }
