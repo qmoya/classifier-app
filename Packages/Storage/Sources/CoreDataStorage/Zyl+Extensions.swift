@@ -8,7 +8,7 @@ extension Zyl: Identifiable, StoredZyl {
 		return array.map { $0 as StoredPhoto }
 	}
 
-	static var all: NSFetchRequest<Zyl> {
+	static var defaultFetchRequest: NSFetchRequest<Zyl> {
 		let req: NSFetchRequest<Zyl> = Zyl.fetchRequest()
 		req.sortDescriptors = [NSSortDescriptor(keyPath: \Zyl.date, ascending: false)]
 		return req

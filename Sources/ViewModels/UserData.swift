@@ -36,27 +36,17 @@ final class UserData: ObservableObject {
 }
 
 extension UserData: InteractorDelegate {
+    func interactor(_ interactor: Interactor, didFetchZyls zyls: [InteractorZyl]) {
+        self.zyls.append(contentsOf: zyls.map { Zyl(interactorZyl: $0) })
+    }
+    
 	func interactor(_ interactor: Interactor, didCreateZyl interactorZyl: InteractorZyl) {
-		let zyl = Zyl()
-		zyl.hero = Hero()
-		for interactorPhoto in interactorZyl.photos {
-			let photo = Photo()
-            photo.data = interactorPhoto.data
-			zyl.photos.append(photo)
-		}
-		zyls.append(zyl)
+		let zyl = Zyl(interactorZyl: interactorZyl)
+		zyls.insert(zyl, at: 0)
 	}
 
 	func interactorWillCreateZyl(_ interactor: Interactor) {
 		showsCreatingZylActivityIndicator = true
-	}
-
-	func interactorDidCreateZyl(_ interactor: Interactor) {
-		let zyl = Zyl()
-		let photo = Photo()
-		zyl.hero = Hero()
-		zyl.photos = [photo]
-		zyls.append(zyl)
 	}
 
 	func interactorPhotoLibraryAccessRequestDidFail(_ interactor: Interactor) {}

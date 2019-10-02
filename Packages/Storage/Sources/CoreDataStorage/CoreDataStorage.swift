@@ -3,6 +3,16 @@ import Foundation
 import Storage
 
 public class CoreDataStorage: Storage {
+    public func fetchZyls() -> [StoredZyl] {
+        let req = Zyl.defaultFetchRequest
+        do {
+            let results = try viewContext.fetch(req)
+            return results
+        } catch {
+            return []
+        }
+    }
+    
     var viewContext: NSManagedObjectContext { persistentContainer.viewContext }
 
 	public func createPhoto(forZylWithUUID uuid: UUID) {}
@@ -46,8 +56,8 @@ public class CoreDataStorage: Storage {
 
 	public func save() {
 		viewContext.perform {
-			try? self.viewContext.save()
-		}
+            self.saveContext()
+        }
 	}
 
 	public func createAsset(forAssetGroup assetGroup: StoredAssetGroup, localIdentifier: String) -> StoredAsset {
