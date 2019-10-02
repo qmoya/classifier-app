@@ -142,8 +142,8 @@ extension Interactor: ZylMakerDelegate {
 
 extension Interactor: ZylMakerDataSource {
 	public func zylMaker(_ zylMaker: ZylMaker, dataForImageAt index: Int, completion: @escaping (Data) -> Void) {
-        guard index < assets.count else { return }
-		mediaLibrary.requestData(forImageWithLocalIdentifier: assets[index].localIdentifier) { data in
+        guard let group = lastAssetGroup, let id = group.storedAssets[index].localIdentifier else { return }
+        mediaLibrary.requestData(forImageWithLocalIdentifier: id) { data in
 			completion(data)
 		}
 	}

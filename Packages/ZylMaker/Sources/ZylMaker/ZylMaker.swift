@@ -14,7 +14,6 @@ public protocol ZylMakerDataSource: class {
 
 public protocol ZylMakerDelegate: class {
 	func zylMakerWillCreateZyl(_ zylMaker: ZylMaker)
-
 	func zylMaker(_ zylMaker: ZylMaker, didCreateZyl zyl: Proxy)
 }
 

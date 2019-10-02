@@ -17,6 +17,7 @@ public protocol StoredAssetGroup {
 }
 
 public protocol StoredAsset {
+    var localIdentifier: String? { get set }
 	var date: Date? { get set }
 }
 
