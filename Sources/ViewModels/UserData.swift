@@ -42,6 +42,7 @@ extension UserData: InteractorDelegate {
 		zyl.hero = Hero()
 		for interactorPhoto in interactorZyl.photos {
 			let photo = Photo()
+            photo.data = interactorPhoto.data
 			zyl.photos.append(photo)
 		}
 		zyls.append(zyl)

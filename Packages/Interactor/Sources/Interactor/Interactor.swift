@@ -120,6 +120,7 @@ extension Interactor: ZylMakerDelegate {
 		for i in 0 ..< zyl.numberOfPhotos {
 			let data = zyl.data(forPhotoAt: i)
 			let photo = storage.createPhoto(date: Date(), data: data, zyl: newZyl)
+            print(photo.data)
 		}
 		storage.save()
 

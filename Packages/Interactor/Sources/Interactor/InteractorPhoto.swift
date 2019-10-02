@@ -1,5 +1,5 @@
 import Foundation
 
 public struct InteractorPhoto {
-	let data: Data
+	public let data: Data
 }

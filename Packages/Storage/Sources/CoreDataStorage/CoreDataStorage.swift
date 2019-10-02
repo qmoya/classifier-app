@@ -31,6 +31,8 @@ public class CoreDataStorage: Storage {
 	public func createPhoto(date: Date, data: Data, zyl: StoredZyl) -> StoredPhoto {
 		guard let zyl = zyl as? Zyl else { return Photo() }
 		let photo = Photo(context: viewContext)
+        photo.data = data
+        photo.date = date
 		zyl.addToPhotos(photo)
 		return photo
 	}
