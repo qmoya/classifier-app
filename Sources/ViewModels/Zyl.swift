@@ -9,10 +9,6 @@ class Zyl: ObservableObject, Identifiable {
 	init(interactorZyl: InteractorZyl) {
 		hero = Hero()
 		date = interactorZyl.date
-		for interactorPhoto in interactorZyl.photos {
-			let photo = Photo()
-			photo.data = interactorPhoto.data
-			photos.append(photo)
-		}
+        photos = interactorZyl.photos.map { Photo(interactorPhoto: $0) }
 	}
 }

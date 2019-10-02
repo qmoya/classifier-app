@@ -4,6 +4,7 @@ public protocol Proxy {
 	var heroData: Data { get }
 	var numberOfPhotos: Int { get }
 	func data(forPhotoAt index: Int) -> Data
+    func date(forPhotoAt index: Int) -> Date
     var date: Date { get }
 }
 

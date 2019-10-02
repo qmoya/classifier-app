@@ -60,10 +60,11 @@ public class CoreDataStorage: Storage {
 		}
 	}
 
-	public func createAsset(forAssetGroup assetGroup: StoredAssetGroup, localIdentifier: String) -> StoredAsset {
+    public func createAsset(forAssetGroup assetGroup: StoredAssetGroup, localIdentifier: String, date: Date) -> StoredAsset {
 		guard let group = assetGroup as? AssetGroup else { return Asset() }
 		let asset = Asset(context: viewContext)
 		asset.localIdentifier = localIdentifier
+        asset.date = date
 		group.addToAssets(asset)
 		return asset
 	}

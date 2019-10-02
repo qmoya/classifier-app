@@ -113,7 +113,7 @@ extension Interactor: ImageClassifierDelegate {
 
 			for j in 0 ..< imageClassifier.numberOfPhotos(forGroupAt: i) {
 				guard let id = imageClassifier.localIdentifier(forPhotoAt: j, inGroupAt: i) else { continue }
-				_ = storage.createAsset(forAssetGroup: group, localIdentifier: id)
+                _ = storage.createAsset(forAssetGroup: group, localIdentifier: id, date: date)
 			}
 		}
 		storage.save()
@@ -126,7 +126,8 @@ extension Interactor: ZylMakerDelegate {
 
 		for i in 0 ..< zyl.numberOfPhotos {
 			let data = zyl.data(forPhotoAt: i)
-			_ = storage.createPhoto(date: Date(), data: data, zyl: newZyl)
+            let date = zyl.date(forPhotoAt: i)
+            _ = storage.createPhoto(date: date, data: data, zyl: newZyl)
 		}
 		storage.save()
 

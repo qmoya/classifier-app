@@ -30,5 +30,5 @@ public protocol Storage: class {
 	func createZyl(date: Date) -> StoredZyl
 	func createPhoto(date: Date, data: Data, zyl: StoredZyl) -> StoredPhoto
 	func createAssetGroup(date: Date) -> StoredAssetGroup
-	func createAsset(forAssetGroup assetGroup: StoredAssetGroup, localIdentifier: String) -> StoredAsset
+    func createAsset(forAssetGroup assetGroup: StoredAssetGroup, localIdentifier: String, date: Date) -> StoredAsset
 }

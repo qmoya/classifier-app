@@ -2,12 +2,16 @@ import Foundation
 import ZylMaker
 
 internal struct SimpleProxy: Proxy {
+    func date(forPhotoAt index: Int) -> Date {
+        return images[index].date
+    }
+    
     var date: Date
     
 	let images: [Image]
 
 	var heroData: Data {
-		return images[0].data
+        return images.first?.data ?? Data()
 	}
 
 	var numberOfPhotos: Int {

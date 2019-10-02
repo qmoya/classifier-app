@@ -9,6 +9,6 @@ public struct InteractorZyl {
 	init(storedZyl: StoredZyl) {
 		date = storedZyl.date ?? Date.distantPast
 		hero = Data()
-		photos = storedZyl.storedPhotos.map { InteractorPhoto(data: $0.data ?? Data()) }
+        photos = storedZyl.storedPhotos.map { InteractorPhoto(storedPhoto: $0) }
 	}
 }
