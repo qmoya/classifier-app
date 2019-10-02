@@ -7,9 +7,8 @@ extension AssetGroup: StoredAssetGroup {
 		return array.map { $0 as StoredAsset }
 	}
 
-	static var randomRecordRequest: NSFetchRequest<AssetGroup> {
+	static var defaultFetchRequest: NSFetchRequest<AssetGroup> {
 		let req: NSFetchRequest<AssetGroup> = AssetGroup.fetchRequest()
-		req.fetchLimit = 1
 		req.sortDescriptors = [NSSortDescriptor(keyPath: \AssetGroup.date, ascending: true)]
 		return req
 	}

@@ -4,7 +4,6 @@ import Foundation
 import Interactor
 
 final class UserData: ObservableObject {
-	@Published var welcomeSentence = "Hi captain 👨"
 	@Published var canCreateZyl = true
 	@Published var showsSettings = false
 	@Published var isCreateZylButtonEnabled = false

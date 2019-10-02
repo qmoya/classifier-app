@@ -29,7 +29,7 @@ struct ContentView: View {
 				ForEach(userData.zyls) { zyl in
 					ZylView(zyl: zyl)
 				}
-				.navigationBarTitle(userData.welcomeSentence)
+				.navigationBarTitle("My Zyls")
 				.navigationBarItems(leading: showSettingsButton, trailing: createZylButton)
 			}
 		}.sheet(isPresented: $userData.showsSettings, onDismiss: nil) {

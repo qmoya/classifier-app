@@ -10,10 +10,10 @@ public class CoreDataStorage: Storage {
 	public init() {}
 
 	public func fetchRandomAssetGroup() -> StoredAssetGroup? {
-		let req = AssetGroup.randomRecordRequest
+		let req = AssetGroup.defaultFetchRequest
 		do {
 			let results = try viewContext.fetch(req)
-			if let result = results.first {
+			if let result = results.randomElement() {
 				return result
 			}
 			return nil
