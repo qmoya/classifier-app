@@ -20,7 +20,8 @@ public class SimpleZylMaker: ZylMaker {
 			}
 		}
 
-		let proxy = GIFProxy(images: images)
+        let date = ds.date(for: self)
+        let proxy = SimpleProxy(date: date, images: images)
 		del.zylMaker(self, didCreateZyl: proxy)
 	}
 

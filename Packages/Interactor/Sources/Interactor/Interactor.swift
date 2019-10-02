@@ -122,7 +122,7 @@ extension Interactor: ImageClassifierDelegate {
 
 extension Interactor: ZylMakerDelegate {
 	public func zylMaker(_ zylMaker: ZylMaker, didCreateZyl zyl: Proxy) {
-		let newZyl = storage.createZyl(date: Date())
+        let newZyl = storage.createZyl(date: zyl.date)
 
 		for i in 0 ..< zyl.numberOfPhotos {
 			let data = zyl.data(forPhotoAt: i)
@@ -141,6 +141,11 @@ extension Interactor: ZylMakerDelegate {
 }
 
 extension Interactor: ZylMakerDataSource {
+    public func date(for zylMaker: ZylMaker) -> Date {
+        guard let group = lastAssetGroup, let date = group.date else { return Date() }
+        return date
+    }
+    
 	public func zylMaker(_ zylMaker: ZylMaker, dataForImageAt index: Int, completion: @escaping (Data) -> Void) {
 		guard let group = lastAssetGroup, let id = group.storedAssets[index].localIdentifier else { return }
 		mediaLibrary.requestData(forImageWithLocalIdentifier: id) { data in

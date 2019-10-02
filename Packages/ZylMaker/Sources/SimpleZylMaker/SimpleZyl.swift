@@ -1,7 +1,9 @@
 import Foundation
 import ZylMaker
 
-internal struct GIFProxy: Proxy {
+internal struct SimpleProxy: Proxy {
+    var date: Date
+    
 	let images: [Image]
 
 	var heroData: Data {

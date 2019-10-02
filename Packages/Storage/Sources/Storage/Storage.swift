@@ -13,6 +13,7 @@ public protocol StoredPhoto {
 }
 
 public protocol StoredAssetGroup {
+    var date: Date? { get set }
 	var storedAssets: [StoredAsset] { get }
 }
 
