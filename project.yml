@@ -1,0 +1,76 @@
+name: MyApp
+options:
+  deploymentTarget:
+    iOS: 13.0
+  bundleIdPrefix: com.qmoya.zyl
+  createIntermediateGroups: true
+  indentWidth: 4
+  tabWidth: 4
+targets:
+  Zyl:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.qmoya.zyl.ios
+    sources: 
+      - Sources
+    dependencies:
+      - target: ImageClassifier
+      - target: Interactor
+      - target: MediaLibrary
+      - target: Storage
+      - target: ZylMaker
+      - target: DateImageClassifier
+      - target: SystemMediaLibrary
+      - target: CoreDataStorage
+      - target: SimpleZylMaker
+  ImageClassifier:
+    type: library.static
+    platform: iOS
+    sources: [Packages/ImageClassifier/Sources/ImageClassifier]
+  DateImageClassifier:
+    type: library.static
+    platform: iOS
+    sources: [Packages/ImageClassifier/Sources/DateImageClassifier]
+    dependencies:
+      - target: ImageClassifier
+  Interactor:
+    type: library.static
+    platform: iOS
+    sources: [Packages/Interactor/Sources/Interactor]
+    dependencies:
+      - target: ImageClassifier
+      - target: MediaLibrary
+      - target: Storage
+      - target: ZylMaker
+  ZylMaker:
+    type: library.static
+    platform: iOS
+    sources: [Packages/ZylMaker/Sources/ZylMaker]
+  SimpleZylMaker:
+    type: library.static
+    platform: iOS
+    sources: [Packages/ZylMaker/Sources/SimpleZylMaker]
+    dependencies:
+      - target: ZylMaker
+  MediaLibrary:
+    type: library.static
+    platform: iOS
+    sources: [Packages/MediaLibrary/Sources/MediaLibrary]
+  SystemMediaLibrary:
+    type: library.static
+    platform: iOS
+    sources: [Packages/MediaLibrary/Sources/SystemMediaLibrary]
+    dependencies:
+      - target: MediaLibrary
+  Storage:
+    type: framework
+    platform: iOS
+    sources: [Packages/Storage/Sources/Storage]
+  CoreDataStorage:
+    type: framework
+    platform: iOS
+    sources: [Packages/Storage/Sources/CoreDataStorage]
+    dependencies:
+      - target: Storage
