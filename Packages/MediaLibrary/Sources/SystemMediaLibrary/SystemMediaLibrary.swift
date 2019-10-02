@@ -21,7 +21,7 @@ public class SystemMediaLibrary: MediaLibrary {
 	public func requestData(forImageWithLocalIdentifier id: String, completion: @escaping (Data) -> Void) {
 		let assets = PHAsset.fetchAssets(withLocalIdentifiers: [id], options: nil)
 		let asset = assets.object(at: 0)
-		imageManager.requestImage(for: asset, targetSize: CGSize(width: 600, height: 600), contentMode: .aspectFill, options: nil) { image, _ in
+		imageManager.requestImage(for: asset, targetSize: CGSize(width: 1200, height: 1200), contentMode: .aspectFill, options: nil) { image, _ in
 			guard let img = image, let data = img.pngData() else { return }
 			completion(data)
 		}

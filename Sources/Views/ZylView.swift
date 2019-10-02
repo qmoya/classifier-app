@@ -21,7 +21,7 @@ struct ZylView: View {
 				.padding(.top, 15)
 
 			NavigationLink(destination: HeroView(hero: zyl.hero!)) {
-				Image("landscape")
+                Image(uiImage: zyl.hero?.uiImage ?? UIImage(named: "landscape")!)
 					.renderingMode(.original)
 					.resizable()
 					.scaledToFill()
