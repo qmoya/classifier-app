@@ -50,7 +50,7 @@ public class DateClassifier: ImageClassifier {
 
 	public init() {}
 
-    private var imagesByDate = [Date: [Image]]()
-    
-    private var images = [Image]()
+	private var imagesByDate = [Date: [Image]]()
+
+	private var images = [Image]()
 }

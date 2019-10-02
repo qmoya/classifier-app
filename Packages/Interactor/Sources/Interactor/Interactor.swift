@@ -9,7 +9,7 @@ public protocol InteractorDelegate: class {
 	func interactorDidBeginClassifying(_ interactor: Interactor)
 	func interactorWillCreateZyl(_ interactor: Interactor)
 	func interactor(_ interactor: Interactor, didCreateZyl zyl: InteractorZyl)
-    func interactor(_ interactor: Interactor, didFetchZyls zyl: [InteractorZyl])
+	func interactor(_ interactor: Interactor, didFetchZyls zyl: [InteractorZyl])
 }
 
 public protocol UserInterface {
@@ -45,15 +45,15 @@ public class Interactor {
 	public func createZyl() {
 		zylMaker.makeZyl()
 	}
-    
-    func loadZyls() {
-        let zyls = storage.fetchZyls().map { InteractorZyl(storedZyl: $0) }
-        delegate?.interactor(self, didFetchZyls: zyls)
-    }
+
+	func loadZyls() {
+		let zyls = storage.fetchZyls().map { InteractorZyl(storedZyl: $0) }
+		delegate?.interactor(self, didFetchZyls: zyls)
+	}
 
 	public func launch() {
 		guard let d = delegate else { return }
-        loadZyls()
+		loadZyls()
 		if !mediaLibrary.isAuthorized {
 			perform { d.showAuthorizationScreen() }
 		}
@@ -142,8 +142,8 @@ extension Interactor: ZylMakerDelegate {
 
 extension Interactor: ZylMakerDataSource {
 	public func zylMaker(_ zylMaker: ZylMaker, dataForImageAt index: Int, completion: @escaping (Data) -> Void) {
-        guard let group = lastAssetGroup, let id = group.storedAssets[index].localIdentifier else { return }
-        mediaLibrary.requestData(forImageWithLocalIdentifier: id) { data in
+		guard let group = lastAssetGroup, let id = group.storedAssets[index].localIdentifier else { return }
+		mediaLibrary.requestData(forImageWithLocalIdentifier: id) { data in
 			completion(data)
 		}
 	}

@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct ZylView: View {
-    static let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .long
-        return formatter
-    }()
+	static let dateFormatter: DateFormatter = {
+		let formatter = DateFormatter()
+		formatter.dateStyle = .long
+		return formatter
+	}()
 
 	let zyl: Zyl
 
@@ -15,7 +15,7 @@ struct ZylView: View {
 
 	var body: some View {
 		VStack(alignment: .leading) {
-            Text("On \(zyl.date, formatter: Self.dateFormatter)")
+			Text("On \(zyl.date, formatter: Self.dateFormatter)")
 				.font(.headline)
 				.padding(.leading, 15)
 				.padding(.top, 15)

@@ -1,8 +1,8 @@
 import CoreDataStorage
 import DateImageClassifier
 import Foundation
-import SimpleZylMaker
 import Interactor
+import SimpleZylMaker
 import SystemMediaLibrary
 
 extension Interactor {

@@ -17,14 +17,14 @@ public protocol StoredAssetGroup {
 }
 
 public protocol StoredAsset {
-    var localIdentifier: String? { get set }
+	var localIdentifier: String? { get set }
 	var date: Date? { get set }
 }
 
 public protocol Storage: class {
 	func save()
 
-    func fetchZyls() -> [StoredZyl]
+	func fetchZyls() -> [StoredZyl]
 	func fetchRandomAssetGroup() -> StoredAssetGroup?
 	func createZyl(date: Date) -> StoredZyl
 	func createPhoto(date: Date, data: Data, zyl: StoredZyl) -> StoredPhoto

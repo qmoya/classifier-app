@@ -545,38 +545,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C917F081-902F-4C89-B526-CA9760AA5C97"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Packages/Interactor/Sources/Interactor/Interactor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "numberOfImages(for:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DEBEE3CD-37DD-4011-8D47-C15EB5F6FF48"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Packages/Interactor/Sources/Interactor/Interactor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "zylMakerWillCreateZyl(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "CF4CD092-3AF5-4D02-804E-96CEC93204B0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -594,7 +562,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "ABECD9DE-4C23-4A84-BE82-FA0B92BFDD01"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Packages/Interactor/Sources/Interactor/Interactor.swift"
@@ -607,7 +575,7 @@
             <Locations>
                <Location
                   uuid = "ABECD9DE-4C23-4A84-BE82-FA0B92BFDD01 - a20ed3549b66515f"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Interactor.Interactor.zylMaker(_: ZylMaker.ZylMaker, dataForImageAt: Swift.Int, completion: (Foundation.Data) -&gt; ()) -&gt; ()"
@@ -622,7 +590,7 @@
                </Location>
                <Location
                   uuid = "ABECD9DE-4C23-4A84-BE82-FA0B92BFDD01 - 446774b462fb6d83"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Foundation.Data) -&gt; () in Interactor.Interactor.zylMaker(_: ZylMaker.ZylMaker, dataForImageAt: Swift.Int, completion: (Foundation.Data) -&gt; ()) -&gt; ()"
@@ -636,38 +604,6 @@
                   offsetFromSymbolStart = "128">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F0AF0B0D-EAC3-4408-8E66-58193DD7B02C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Packages/Interactor/Sources/Interactor/Interactor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "zylMaker(_:dateForImageAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DC073218-7F06-4B1E-A15B-86D8666E7DC2"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Packages/Interactor/Sources/Interactor/Interactor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "zylMaker(_:dataForImageAt:completion:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
