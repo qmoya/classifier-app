@@ -1,0 +1,1668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01E7BAF81CD153558CAE8C7D /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF71B5E0306A96E3A89F80B /* CoreDataStorage.swift */; };
+		0C5E0B2330B880E3343FF148 /* MediaLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D218E7F9FECDEE7818015B07 /* MediaLibrary.a */; };
+		0DFB6D44D6BD3B4BD1D33708 /* Interactor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 711AA33F65A34F2A0D94D08A /* Interactor.a */; };
+		179B1951ED429C2AAAA9FD26 /* ZylDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF746CFEEE3B5F5050BAD66 /* ZylDetailView.swift */; };
+		2214841A4CA7045FEC9F71D6 /* CoreDataStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93E7D9611E0BDA9EB00878C7 /* CoreDataStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2ABEB921B0D27A4D0C23DFDA /* SimpleZylMaker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B44FAE3AC3CBDFD5B14B128C /* SimpleZylMaker.a */; };
+		2B8EBA0C4CFB57DC438968A1 /* Zyl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07269296B0600A24F4D08813 /* Zyl+Extensions.swift */; };
+		2EA3CC37E04AAE8C72B783AF /* PhotosRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB0B27027BE8D4B447FAF1 /* PhotosRow.swift */; };
+		31237AB60A8C8DBE26743775 /* InteractorZyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18AB08D6178B4956E64030 /* InteractorZyl.swift */; };
+		3D0CF0A42F03D6EBE909200C /* MediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D3B387BDDD59A7AF356D2 /* MediaLibrary.swift */; };
+		3FF97AF608E1F078A9CC15B1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66749A37C41FA6CBA1EB5C /* Image.swift */; };
+		43509B98B490964981B282B7 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36CDDB3708292578686354 /* ImageClassifier.swift */; };
+		4D98EF16753AF8D595825A6C /* Zyl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 302D682B191C70FADFF0ECFD /* Zyl.xcdatamodeld */; };
+		5781E738A482C76840B6DFE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA213A015D532820910BA7F4 /* SceneDelegate.swift */; };
+		5A665F7F2D2093BFC09D5FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E79E5A50E593A57F1910F /* AppDelegate.swift */; };
+		5C53C3A1D57916E5E15099EF /* SystemMediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051631F3B4E5ABF40E1CE627 /* SystemMediaLibrary.swift */; };
+		5E4DC0A3D01E5EF94ACCE51A /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD533D59AC741AB62EA2E26 /* PhotoDetailView.swift */; };
+		603D89DD002D660F4D4E2AD9 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1567E167022420614C8840 /* PhotoItem.swift */; };
+		72C24B8D22D2A3231DDBBCC4 /* SimpleZylMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356CADA550398D7C82A69E61 /* SimpleZylMaker.swift */; };
+		7825F0CC9EA4014560E718DB /* SimpleZyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E267650EE1900E0CE3E9E8 /* SimpleZyl.swift */; };
+		791EF3F11AB3A0BD6339F17F /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B5144360CBC53FBDCECF3D /* Interactor.swift */; };
+		79FB911D6A473DE00CE36D76 /* DateImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F502315B21865683D31AC08C /* DateImageClassifier.swift */; };
+		7F8E3E85445E4ABA60B55307 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE855AFD54182025FB58ACAA /* Image.swift */; };
+		88625FD6D63EF3705330B1B5 /* Asset+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6447A79665F0B214AE70C9B9 /* Asset+Extensions.swift */; };
+		8CC92C810D54871F1CE5A3A8 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD63919A2B00324DAA2E0BF1 /* PersistentContainer.swift */; };
+		8D3D77007A2D18DA87BBCD7B /* Zyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09ED21AA7DECFD9DEEAA4FB /* Zyl.swift */; };
+		92C5AA2A303071E5BC4354BD /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39FC47B7B6CE3713EC3EFF7 /* Storage.framework */; };
+		9F21D975AE0B3214C6C81A2E /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D39FC47B7B6CE3713EC3EFF7 /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F2B6524CC95601EB8A8E248 /* ZylMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFDD4B58AAB6D445F4164B2 /* ZylMaker.swift */; };
+		A4563E35E518C4F3D266E7D8 /* SystemMediaLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06758BF5DA2F714FA7B9ABC0 /* SystemMediaLibrary.a */; };
+		A4E0783EDA8FC6B170088C54 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01694296069132A815BE62 /* Storage.swift */; };
+		AABBA2DFB83B21A198BD6494 /* AssetGroup+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9300C021C642A3C2D9FD96F8 /* AssetGroup+Extensions.swift */; };
+		AF62BEE4AD68926D07CF3F4B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F23748475FA276463B644C /* UserData.swift */; };
+		B2CC7D6D7F7EE402181764A7 /* Photo+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02E7362AB7972B9D00143E /* Photo+Extensions.swift */; };
+		B32C0A375ABC869A614ED4B0 /* Interactor+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508DF70D06738A639674EE2A /* Interactor+Builder.swift */; };
+		BCAC1DC2FFB0485E00291D1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A8416A24A8B5063780184 /* ContentView.swift */; };
+		BDC92E4573E3BC97551778A6 /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39FC47B7B6CE3713EC3EFF7 /* Storage.framework */; };
+		C185CA579F7AEF5F5206E850 /* ImageClassifier.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEADBE8689E9D43BE6F2ABB2 /* ImageClassifier.a */; };
+		C63CFD74D8A97C09BF11F72A /* InteractorPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A07F832DC7FAFD08BCD8E19 /* InteractorPhoto.swift */; };
+		CA803CE7A16CDD654CF53C65 /* PhotosAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B72670247DB3772E44913C /* PhotosAuthorization.swift */; };
+		CB2F28A58CD4B4E26EE1C9CC /* DateImageClassifier.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FECDA5CA6C02A5B83144D1BE /* DateImageClassifier.a */; };
+		D02575F050CDB2B4A1A0D9DF /* ZylView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171F163F3D805FE0D585303 /* ZylView.swift */; };
+		D4AFE0FD62D32C30015CA85D /* ZylMaker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1D29A996F29F10D76EAD18 /* ZylMaker.a */; };
+		DB39AF3860BD80E6D526F46D /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523C5BA9E1B4DC4BE3295E4 /* Hero.swift */; };
+		DC3A18D3EDD7C8E5EC033C0C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73076594F93F61AA1D18EC /* Photo.swift */; };
+		DE0C995CE1418B842B1C46A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E98EB6147B3D7BD42E48253 /* LaunchScreen.storyboard */; };
+		DF5C733410F412A82922BD55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C28D6A9D4BCC1B21F86BB06 /* Assets.xcassets */; };
+		E048B0C12F4CC1C3BAA22E39 /* CoreDataStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E7D9611E0BDA9EB00878C7 /* CoreDataStorage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		153FF38B9C77F45469F9F842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2322296F63F0F835ECAC8968;
+			remoteInfo = CoreDataStorage;
+		};
+		26D888E1CA182A7D1A1EC3C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66D30FF8C1CB05AA0C074228;
+			remoteInfo = SystemMediaLibrary;
+		};
+		39961DC3BD3FAAB360995D60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBE93E1F769AEE768D1CEE51;
+			remoteInfo = ZylMaker;
+		};
+		3C0AD85719AB7AC460E5FC02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB53420811EFF26E5D0EA22E;
+			remoteInfo = ImageClassifier;
+		};
+		4A7FD59BB003DD6108CAAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBE93E1F769AEE768D1CEE51;
+			remoteInfo = ZylMaker;
+		};
+		4C5D16AB53E2EF1408B0B8D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C9089276B56BAFF0712FC39;
+			remoteInfo = MediaLibrary;
+		};
+		5A3B33B39A82B844DD44D44E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C9089276B56BAFF0712FC39;
+			remoteInfo = MediaLibrary;
+		};
+		7522B5F5A4F8DD833F9313BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBE93E1F769AEE768D1CEE51;
+			remoteInfo = ZylMaker;
+		};
+		964DE53F47D96DC81629B494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A82E772E6B8D1ECB7BC43A2B;
+			remoteInfo = Storage;
+		};
+		9EB528215DBDCDB65A11FA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A464B2C12A6CA3029E0F216F;
+			remoteInfo = SimpleZylMaker;
+		};
+		A6E0EEAFD6969AEEC537533C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB53420811EFF26E5D0EA22E;
+			remoteInfo = ImageClassifier;
+		};
+		B0BC32119C85D521966580E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB53420811EFF26E5D0EA22E;
+			remoteInfo = ImageClassifier;
+		};
+		B73EEDF280CCBBE5030DE462 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C9089276B56BAFF0712FC39;
+			remoteInfo = MediaLibrary;
+		};
+		BE4F25C3FA0F43C1975C4A77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A82E772E6B8D1ECB7BC43A2B;
+			remoteInfo = Storage;
+		};
+		C62481B376C0B44E5A46E7C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7FFBD8F1B9BEB9134DDE444;
+			remoteInfo = Interactor;
+		};
+		DEC0F09A1783C3B93A984ECD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A82E772E6B8D1ECB7BC43A2B;
+			remoteInfo = Storage;
+		};
+		E4FDAD3AEE6F0F4A31CD55B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E93713DEFCAE09CF2E322E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01ED5E2E065B339A46EB7795;
+			remoteInfo = DateImageClassifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		849F63F26DF38E2A69973AAA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F21D975AE0B3214C6C81A2E /* Storage.framework in Embed Frameworks */,
+				2214841A4CA7045FEC9F71D6 /* CoreDataStorage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		051631F3B4E5ABF40E1CE627 /* SystemMediaLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMediaLibrary.swift; sourceTree = "<group>"; };
+		06758BF5DA2F714FA7B9ABC0 /* SystemMediaLibrary.a */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = archive.ar; path = SystemMediaLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		07269296B0600A24F4D08813 /* Zyl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Zyl+Extensions.swift"; sourceTree = "<group>"; };
+		0C36CDDB3708292578686354 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		1A1567E167022420614C8840 /* PhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
+		356CADA550398D7C82A69E61 /* SimpleZylMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleZylMaker.swift; sourceTree = "<group>"; };
+		3AFDD4B58AAB6D445F4164B2 /* ZylMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZylMaker.swift; sourceTree = "<group>"; };
+		4171F163F3D805FE0D585303 /* ZylView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZylView.swift; sourceTree = "<group>"; };
+		43D844FFCF162DD284AC263B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA9198D89F23F790933B68C /* Zyl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zyl.xcdatamodel; sourceTree = "<group>"; };
+		508DF70D06738A639674EE2A /* Interactor+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interactor+Builder.swift"; sourceTree = "<group>"; };
+		5A07F832DC7FAFD08BCD8E19 /* InteractorPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorPhoto.swift; sourceTree = "<group>"; };
+		5C73076594F93F61AA1D18EC /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		5F01694296069132A815BE62 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		63B72670247DB3772E44913C /* PhotosAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAuthorization.swift; sourceTree = "<group>"; };
+		6447A79665F0B214AE70C9B9 /* Asset+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asset+Extensions.swift"; sourceTree = "<group>"; };
+		6B1D29A996F29F10D76EAD18 /* ZylMaker.a */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = archive.ar; path = ZylMaker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		711AA33F65A34F2A0D94D08A /* Interactor.a */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = archive.ar; path = Interactor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E267650EE1900E0CE3E9E8 /* SimpleZyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleZyl.swift; sourceTree = "<group>"; };
+		7C28D6A9D4BCC1B21F86BB06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81D2F2DDFCFBEE8AE866448E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		844D3B387BDDD59A7AF356D2 /* MediaLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibrary.swift; sourceTree = "<group>"; };
+		87F23748475FA276463B644C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		8F8A8416A24A8B5063780184 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9300C021C642A3C2D9FD96F8 /* AssetGroup+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AssetGroup+Extensions.swift"; sourceTree = "<group>"; };
+		93E7D9611E0BDA9EB00878C7 /* CoreDataStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDataStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9523C5BA9E1B4DC4BE3295E4 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		9BF71B5E0306A96E3A89F80B /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		9FF746CFEEE3B5F5050BAD66 /* ZylDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZylDetailView.swift; sourceTree = "<group>"; };
+		A0AB0B27027BE8D4B447FAF1 /* PhotosRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosRow.swift; sourceTree = "<group>"; };
+		AB13241379481C2CB74E9AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD18AB08D6178B4956E64030 /* InteractorZyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorZyl.swift; sourceTree = "<group>"; };
+		AD63919A2B00324DAA2E0BF1 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		ADD533D59AC741AB62EA2E26 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		AFA8A7995410D3B0AAE83845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44FAE3AC3CBDFD5B14B128C /* SimpleZylMaker.a */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = archive.ar; path = SimpleZylMaker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA66749A37C41FA6CBA1EB5C /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		BEADBE8689E9D43BE6F2ABB2 /* ImageClassifier.a */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = archive.ar; path = ImageClassifier.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1EA6D757510C23857B9FCBE /* Zyl.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Zyl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09ED21AA7DECFD9DEEAA4FB /* Zyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zyl.swift; sourceTree = "<group>"; };
+		D218E7F9FECDEE7818015B07 /* MediaLibrary.a */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = archive.ar; path = MediaLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39FC47B7B6CE3713EC3EFF7 /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD02E7362AB7972B9D00143E /* Photo+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+Extensions.swift"; sourceTree = "<group>"; };
+		DE855AFD54182025FB58ACAA /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		E62E79E5A50E593A57F1910F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA213A015D532820910BA7F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F0B5144360CBC53FBDCECF3D /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		F502315B21865683D31AC08C /* DateImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateImageClassifier.swift; sourceTree = "<group>"; };
+		FECDA5CA6C02A5B83144D1BE /* DateImageClassifier.a */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = archive.ar; path = DateImageClassifier.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BDD39B0176BFAADEBE06DB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C5AA2A303071E5BC4354BD /* Storage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7500326754E99EC8A229F7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C185CA579F7AEF5F5206E850 /* ImageClassifier.a in Frameworks */,
+				0DFB6D44D6BD3B4BD1D33708 /* Interactor.a in Frameworks */,
+				0C5E0B2330B880E3343FF148 /* MediaLibrary.a in Frameworks */,
+				BDC92E4573E3BC97551778A6 /* Storage.framework in Frameworks */,
+				D4AFE0FD62D32C30015CA85D /* ZylMaker.a in Frameworks */,
+				CB2F28A58CD4B4E26EE1C9CC /* DateImageClassifier.a in Frameworks */,
+				A4563E35E518C4F3D266E7D8 /* SystemMediaLibrary.a in Frameworks */,
+				E048B0C12F4CC1C3BAA22E39 /* CoreDataStorage.framework in Frameworks */,
+				2ABEB921B0D27A4D0C23DFDA /* SimpleZylMaker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0396F48BE5368255C7F2C1E1 = {
+			isa = PBXGroup;
+			children = (
+				E439813DDA3680186D007BFD /* Packages */,
+				A347B01B6B46EA4791C2FC35 /* Sources */,
+				AAEFF7C7E9BC4D7A847CB9A8 /* Products */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+		};
+		0ABC7BFB9B21CFF3C2E75628 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				6447A79665F0B214AE70C9B9 /* Asset+Extensions.swift */,
+				9300C021C642A3C2D9FD96F8 /* AssetGroup+Extensions.swift */,
+				9BF71B5E0306A96E3A89F80B /* CoreDataStorage.swift */,
+				AFA8A7995410D3B0AAE83845 /* Info.plist */,
+				AD63919A2B00324DAA2E0BF1 /* PersistentContainer.swift */,
+				DD02E7362AB7972B9D00143E /* Photo+Extensions.swift */,
+				302D682B191C70FADFF0ECFD /* Zyl.xcdatamodeld */,
+				07269296B0600A24F4D08813 /* Zyl+Extensions.swift */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		178E6CBB6A2FC9AEAD077BC3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5300A8A7232F1698FA423B83 /* DateImageClassifier */,
+				8619583E587DBE4D8A83B628 /* ImageClassifier */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3FEFA3B92B4A6D71A8F1087F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AE94F73B50E92CDF4C2E6308 /* Interactor */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		427B2CF6D86C2C8EE5102903 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3FEFA3B92B4A6D71A8F1087F /* Sources */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		527F9AF0D7BDB12B863D49C5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B7C1ED4558F32448A783E2B1 /* MediaLibrary */,
+				740D9C14632C20B078C9887F /* SystemMediaLibrary */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5300A8A7232F1698FA423B83 /* DateImageClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				F502315B21865683D31AC08C /* DateImageClassifier.swift */,
+				BA66749A37C41FA6CBA1EB5C /* Image.swift */,
+			);
+			path = DateImageClassifier;
+			sourceTree = "<group>";
+		};
+		5DDE40CA2D8C9CABEBB0DF16 /* ZylMaker */ = {
+			isa = PBXGroup;
+			children = (
+				7A7614D46B62AEA29C3E218F /* Sources */,
+			);
+			path = ZylMaker;
+			sourceTree = "<group>";
+		};
+		6D11D665619CFC852AC64BD3 /* MediaLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				527F9AF0D7BDB12B863D49C5 /* Sources */,
+			);
+			path = MediaLibrary;
+			sourceTree = "<group>";
+		};
+		740D9C14632C20B078C9887F /* SystemMediaLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				051631F3B4E5ABF40E1CE627 /* SystemMediaLibrary.swift */,
+			);
+			path = SystemMediaLibrary;
+			sourceTree = "<group>";
+		};
+		7A7614D46B62AEA29C3E218F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				80DB0D433C33BA6BB3278247 /* SimpleZylMaker */,
+				CC3EA28DAEEF57A580F7F8EA /* ZylMaker */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		80DB0D433C33BA6BB3278247 /* SimpleZylMaker */ = {
+			isa = PBXGroup;
+			children = (
+				DE855AFD54182025FB58ACAA /* Image.swift */,
+				77E267650EE1900E0CE3E9E8 /* SimpleZyl.swift */,
+				356CADA550398D7C82A69E61 /* SimpleZylMaker.swift */,
+			);
+			path = SimpleZylMaker;
+			sourceTree = "<group>";
+		};
+		8619583E587DBE4D8A83B628 /* ImageClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				0C36CDDB3708292578686354 /* ImageClassifier.swift */,
+			);
+			path = ImageClassifier;
+			sourceTree = "<group>";
+		};
+		98CEBAEE236D2A7DBD3874B5 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				AB13241379481C2CB74E9AF6 /* Info.plist */,
+				5F01694296069132A815BE62 /* Storage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A32B8724E222F9871FFA0B59 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A4C8F23B26DD539300498D2E /* Sources */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A347B01B6B46EA4791C2FC35 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E62E79E5A50E593A57F1910F /* AppDelegate.swift */,
+				7C28D6A9D4BCC1B21F86BB06 /* Assets.xcassets */,
+				43D844FFCF162DD284AC263B /* Info.plist */,
+				508DF70D06738A639674EE2A /* Interactor+Builder.swift */,
+				5E98EB6147B3D7BD42E48253 /* LaunchScreen.storyboard */,
+				EA213A015D532820910BA7F4 /* SceneDelegate.swift */,
+				F8E4DAA45A740E9E923F4822 /* ViewModels */,
+				B9C577A6038762817655CB20 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A4C8F23B26DD539300498D2E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0ABC7BFB9B21CFF3C2E75628 /* CoreDataStorage */,
+				98CEBAEE236D2A7DBD3874B5 /* Storage */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AAEFF7C7E9BC4D7A847CB9A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93E7D9611E0BDA9EB00878C7 /* CoreDataStorage.framework */,
+				FECDA5CA6C02A5B83144D1BE /* DateImageClassifier.a */,
+				BEADBE8689E9D43BE6F2ABB2 /* ImageClassifier.a */,
+				711AA33F65A34F2A0D94D08A /* Interactor.a */,
+				D218E7F9FECDEE7818015B07 /* MediaLibrary.a */,
+				B44FAE3AC3CBDFD5B14B128C /* SimpleZylMaker.a */,
+				D39FC47B7B6CE3713EC3EFF7 /* Storage.framework */,
+				06758BF5DA2F714FA7B9ABC0 /* SystemMediaLibrary.a */,
+				C1EA6D757510C23857B9FCBE /* Zyl.app */,
+				6B1D29A996F29F10D76EAD18 /* ZylMaker.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE94F73B50E92CDF4C2E6308 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F0B5144360CBC53FBDCECF3D /* Interactor.swift */,
+				5A07F832DC7FAFD08BCD8E19 /* InteractorPhoto.swift */,
+				AD18AB08D6178B4956E64030 /* InteractorZyl.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B7C1ED4558F32448A783E2B1 /* MediaLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				844D3B387BDDD59A7AF356D2 /* MediaLibrary.swift */,
+			);
+			path = MediaLibrary;
+			sourceTree = "<group>";
+		};
+		B9C577A6038762817655CB20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F8A8416A24A8B5063780184 /* ContentView.swift */,
+				ADD533D59AC741AB62EA2E26 /* PhotoDetailView.swift */,
+				1A1567E167022420614C8840 /* PhotoItem.swift */,
+				63B72670247DB3772E44913C /* PhotosAuthorization.swift */,
+				A0AB0B27027BE8D4B447FAF1 /* PhotosRow.swift */,
+				9FF746CFEEE3B5F5050BAD66 /* ZylDetailView.swift */,
+				4171F163F3D805FE0D585303 /* ZylView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC3EA28DAEEF57A580F7F8EA /* ZylMaker */ = {
+			isa = PBXGroup;
+			children = (
+				3AFDD4B58AAB6D445F4164B2 /* ZylMaker.swift */,
+			);
+			path = ZylMaker;
+			sourceTree = "<group>";
+		};
+		E439813DDA3680186D007BFD /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E6B0F5E85915DA3FC6071CDC /* ImageClassifier */,
+				427B2CF6D86C2C8EE5102903 /* Interactor */,
+				6D11D665619CFC852AC64BD3 /* MediaLibrary */,
+				A32B8724E222F9871FFA0B59 /* Storage */,
+				5DDE40CA2D8C9CABEBB0DF16 /* ZylMaker */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		E6B0F5E85915DA3FC6071CDC /* ImageClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				178E6CBB6A2FC9AEAD077BC3 /* Sources */,
+			);
+			path = ImageClassifier;
+			sourceTree = "<group>";
+		};
+		F8E4DAA45A740E9E923F4822 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9523C5BA9E1B4DC4BE3295E4 /* Hero.swift */,
+				5C73076594F93F61AA1D18EC /* Photo.swift */,
+				87F23748475FA276463B644C /* UserData.swift */,
+				D09ED21AA7DECFD9DEEAA4FB /* Zyl.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01ED5E2E065B339A46EB7795 /* DateImageClassifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD09908485CED98031D0CDB0 /* Build configuration list for PBXNativeTarget "DateImageClassifier" */;
+			buildPhases = (
+				B8DAD900DE2B1FFBC2E27FE2 /* Sources */,
+				7B24A1F2F28868D50BB712D8 /* Copy Swift Objective-C Interface Header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1657682334336AAB89F740F /* PBXTargetDependency */,
+			);
+			name = DateImageClassifier;
+			productName = DateImageClassifier;
+			productReference = FECDA5CA6C02A5B83144D1BE /* DateImageClassifier.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2322296F63F0F835ECAC8968 /* CoreDataStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 906FDFF8C1DCA2DBDFA8D3EC /* Build configuration list for PBXNativeTarget "CoreDataStorage" */;
+			buildPhases = (
+				0291F6025D67FA850D610D2F /* Sources */,
+				2BDD39B0176BFAADEBE06DB7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C08C788A9B7960628A62A284 /* PBXTargetDependency */,
+			);
+			name = CoreDataStorage;
+			productName = CoreDataStorage;
+			productReference = 93E7D9611E0BDA9EB00878C7 /* CoreDataStorage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		66D30FF8C1CB05AA0C074228 /* SystemMediaLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 060E2B00837E1F1BDE142FDC /* Build configuration list for PBXNativeTarget "SystemMediaLibrary" */;
+			buildPhases = (
+				83A080FC026AD6EB04FF3729 /* Sources */,
+				B4846113FFA9B8D4533EB224 /* Copy Swift Objective-C Interface Header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				835BF1403591A3560B652256 /* PBXTargetDependency */,
+			);
+			name = SystemMediaLibrary;
+			productName = SystemMediaLibrary;
+			productReference = 06758BF5DA2F714FA7B9ABC0 /* SystemMediaLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7DE9C6DAD706A75BCE483A8E /* Zyl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8CD176FCBD373A65EB05975 /* Build configuration list for PBXNativeTarget "Zyl" */;
+			buildPhases = (
+				8F3084EA37A45A1E5217CD0F /* Sources */,
+				4BFCBA9312FE3044BB21DD71 /* Resources */,
+				7500326754E99EC8A229F7A0 /* Frameworks */,
+				849F63F26DF38E2A69973AAA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8833F301AF62921B93A7C29C /* PBXTargetDependency */,
+				8C99D5C2C001995686F9182C /* PBXTargetDependency */,
+				EB680DE72B2720BC02A6FB69 /* PBXTargetDependency */,
+				61CC1C9A3C3E9390D91C0837 /* PBXTargetDependency */,
+				4DF23E8852D1359E930316B8 /* PBXTargetDependency */,
+				C117CB7E7C5C27879426A311 /* PBXTargetDependency */,
+				01BBBDAEF6075BA2F5284633 /* PBXTargetDependency */,
+				C78A655E597F1537CDA045F3 /* PBXTargetDependency */,
+				38A2BDAA02DEF5F6703C5224 /* PBXTargetDependency */,
+			);
+			name = Zyl;
+			productName = Zyl;
+			productReference = C1EA6D757510C23857B9FCBE /* Zyl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C9089276B56BAFF0712FC39 /* MediaLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E13D682F21678EC7D50599A7 /* Build configuration list for PBXNativeTarget "MediaLibrary" */;
+			buildPhases = (
+				7E9E2FFE97DEA09D4830B32D /* Sources */,
+				B1F116D65E18C755DC1318EE /* Copy Swift Objective-C Interface Header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaLibrary;
+			productName = MediaLibrary;
+			productReference = D218E7F9FECDEE7818015B07 /* MediaLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A464B2C12A6CA3029E0F216F /* SimpleZylMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38D73FD3F52CAFCFC5F09E55 /* Build configuration list for PBXNativeTarget "SimpleZylMaker" */;
+			buildPhases = (
+				584B49FBB4F554D1A487C37D /* Sources */,
+				D301810A1CC99F074856AB9C /* Copy Swift Objective-C Interface Header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AE6DE6FCF765F4BC5867E33 /* PBXTargetDependency */,
+			);
+			name = SimpleZylMaker;
+			productName = SimpleZylMaker;
+			productReference = B44FAE3AC3CBDFD5B14B128C /* SimpleZylMaker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A82E772E6B8D1ECB7BC43A2B /* Storage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0104AA8FCDC6D5A563B4824A /* Build configuration list for PBXNativeTarget "Storage" */;
+			buildPhases = (
+				B881AEED4C1CC8818D8AFB0F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Storage;
+			productName = Storage;
+			productReference = D39FC47B7B6CE3713EC3EFF7 /* Storage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7FFBD8F1B9BEB9134DDE444 /* Interactor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3BD05957856F036ADCD082D /* Build configuration list for PBXNativeTarget "Interactor" */;
+			buildPhases = (
+				3756376870B225432D65BE1D /* Sources */,
+				D0ADED6E98E18AE9A80DEFAA /* Copy Swift Objective-C Interface Header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFE1102C056625122003FE37 /* PBXTargetDependency */,
+				51892E47BF71920C3A3AAD9D /* PBXTargetDependency */,
+				F8A80F34099BEF78DF509CD1 /* PBXTargetDependency */,
+				EB0D281CA481EF24F3A4EBDC /* PBXTargetDependency */,
+			);
+			name = Interactor;
+			productName = Interactor;
+			productReference = 711AA33F65A34F2A0D94D08A /* Interactor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DB53420811EFF26E5D0EA22E /* ImageClassifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D97631E3533967E0606EF25E /* Build configuration list for PBXNativeTarget "ImageClassifier" */;
+			buildPhases = (
+				E492FF719510863EDBBCB85A /* Sources */,
+				973ECDF13B37AAACC2DCAFB7 /* Copy Swift Objective-C Interface Header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageClassifier;
+			productName = ImageClassifier;
+			productReference = BEADBE8689E9D43BE6F2ABB2 /* ImageClassifier.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DBE93E1F769AEE768D1CEE51 /* ZylMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15DF2AB6846A2A26C0C96C85 /* Build configuration list for PBXNativeTarget "ZylMaker" */;
+			buildPhases = (
+				AA0EE97DE2A4B60C4B59599E /* Sources */,
+				886FCF40F5A81CCA715EDD81 /* Copy Swift Objective-C Interface Header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZylMaker;
+			productName = ZylMaker;
+			productReference = 6B1D29A996F29F10D76EAD18 /* ZylMaker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E93713DEFCAE09CF2E322E65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					01ED5E2E065B339A46EB7795 = {
+						DevelopmentTeam = 287SE9N5MQ;
+					};
+					2322296F63F0F835ECAC8968 = {
+						DevelopmentTeam = 287SE9N5MQ;
+					};
+					66D30FF8C1CB05AA0C074228 = {
+						DevelopmentTeam = 287SE9N5MQ;
+					};
+					7DE9C6DAD706A75BCE483A8E = {
+						DevelopmentTeam = 287SE9N5MQ;
+					};
+					9C9089276B56BAFF0712FC39 = {
+						DevelopmentTeam = 287SE9N5MQ;
+					};
+					A464B2C12A6CA3029E0F216F = {
+						DevelopmentTeam = 287SE9N5MQ;
+					};
+					A82E772E6B8D1ECB7BC43A2B = {
+						DevelopmentTeam = 287SE9N5MQ;
+					};
+					C7FFBD8F1B9BEB9134DDE444 = {
+						DevelopmentTeam = 287SE9N5MQ;
+					};
+					DB53420811EFF26E5D0EA22E = {
+						DevelopmentTeam = 287SE9N5MQ;
+					};
+					DBE93E1F769AEE768D1CEE51 = {
+						DevelopmentTeam = 287SE9N5MQ;
+					};
+				};
+			};
+			buildConfigurationList = 8254D0CA2CEFE0D77A6B28B8 /* Build configuration list for PBXProject "Zyl" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+			);
+			mainGroup = 0396F48BE5368255C7F2C1E1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2322296F63F0F835ECAC8968 /* CoreDataStorage */,
+				01ED5E2E065B339A46EB7795 /* DateImageClassifier */,
+				DB53420811EFF26E5D0EA22E /* ImageClassifier */,
+				C7FFBD8F1B9BEB9134DDE444 /* Interactor */,
+				9C9089276B56BAFF0712FC39 /* MediaLibrary */,
+				A464B2C12A6CA3029E0F216F /* SimpleZylMaker */,
+				A82E772E6B8D1ECB7BC43A2B /* Storage */,
+				66D30FF8C1CB05AA0C074228 /* SystemMediaLibrary */,
+				7DE9C6DAD706A75BCE483A8E /* Zyl */,
+				DBE93E1F769AEE768D1CEE51 /* ZylMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BFCBA9312FE3044BB21DD71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5C733410F412A82922BD55 /* Assets.xcassets in Resources */,
+				DE0C995CE1418B842B1C46A5 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B24A1F2F28868D50BB712D8 /* Copy Swift Objective-C Interface Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(DERIVED_SOURCES_DIR)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			name = "Copy Swift Objective-C Interface Header";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/include/$(PRODUCT_MODULE_NAME)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto \"${SCRIPT_INPUT_FILE_0}\" \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+		886FCF40F5A81CCA715EDD81 /* Copy Swift Objective-C Interface Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(DERIVED_SOURCES_DIR)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			name = "Copy Swift Objective-C Interface Header";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/include/$(PRODUCT_MODULE_NAME)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto \"${SCRIPT_INPUT_FILE_0}\" \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+		973ECDF13B37AAACC2DCAFB7 /* Copy Swift Objective-C Interface Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(DERIVED_SOURCES_DIR)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			name = "Copy Swift Objective-C Interface Header";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/include/$(PRODUCT_MODULE_NAME)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto \"${SCRIPT_INPUT_FILE_0}\" \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+		B1F116D65E18C755DC1318EE /* Copy Swift Objective-C Interface Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(DERIVED_SOURCES_DIR)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			name = "Copy Swift Objective-C Interface Header";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/include/$(PRODUCT_MODULE_NAME)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto \"${SCRIPT_INPUT_FILE_0}\" \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+		B4846113FFA9B8D4533EB224 /* Copy Swift Objective-C Interface Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(DERIVED_SOURCES_DIR)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			name = "Copy Swift Objective-C Interface Header";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/include/$(PRODUCT_MODULE_NAME)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto \"${SCRIPT_INPUT_FILE_0}\" \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+		D0ADED6E98E18AE9A80DEFAA /* Copy Swift Objective-C Interface Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(DERIVED_SOURCES_DIR)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			name = "Copy Swift Objective-C Interface Header";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/include/$(PRODUCT_MODULE_NAME)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto \"${SCRIPT_INPUT_FILE_0}\" \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+		D301810A1CC99F074856AB9C /* Copy Swift Objective-C Interface Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(DERIVED_SOURCES_DIR)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			name = "Copy Swift Objective-C Interface Header";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/include/$(PRODUCT_MODULE_NAME)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto \"${SCRIPT_INPUT_FILE_0}\" \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0291F6025D67FA850D610D2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88625FD6D63EF3705330B1B5 /* Asset+Extensions.swift in Sources */,
+				AABBA2DFB83B21A198BD6494 /* AssetGroup+Extensions.swift in Sources */,
+				01E7BAF81CD153558CAE8C7D /* CoreDataStorage.swift in Sources */,
+				8CC92C810D54871F1CE5A3A8 /* PersistentContainer.swift in Sources */,
+				B2CC7D6D7F7EE402181764A7 /* Photo+Extensions.swift in Sources */,
+				2B8EBA0C4CFB57DC438968A1 /* Zyl+Extensions.swift in Sources */,
+				4D98EF16753AF8D595825A6C /* Zyl.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3756376870B225432D65BE1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				791EF3F11AB3A0BD6339F17F /* Interactor.swift in Sources */,
+				C63CFD74D8A97C09BF11F72A /* InteractorPhoto.swift in Sources */,
+				31237AB60A8C8DBE26743775 /* InteractorZyl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584B49FBB4F554D1A487C37D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8E3E85445E4ABA60B55307 /* Image.swift in Sources */,
+				7825F0CC9EA4014560E718DB /* SimpleZyl.swift in Sources */,
+				72C24B8D22D2A3231DDBBCC4 /* SimpleZylMaker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E9E2FFE97DEA09D4830B32D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0CF0A42F03D6EBE909200C /* MediaLibrary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A080FC026AD6EB04FF3729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C53C3A1D57916E5E15099EF /* SystemMediaLibrary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3084EA37A45A1E5217CD0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A665F7F2D2093BFC09D5FBB /* AppDelegate.swift in Sources */,
+				BCAC1DC2FFB0485E00291D1C /* ContentView.swift in Sources */,
+				DB39AF3860BD80E6D526F46D /* Hero.swift in Sources */,
+				B32C0A375ABC869A614ED4B0 /* Interactor+Builder.swift in Sources */,
+				DC3A18D3EDD7C8E5EC033C0C /* Photo.swift in Sources */,
+				5E4DC0A3D01E5EF94ACCE51A /* PhotoDetailView.swift in Sources */,
+				603D89DD002D660F4D4E2AD9 /* PhotoItem.swift in Sources */,
+				CA803CE7A16CDD654CF53C65 /* PhotosAuthorization.swift in Sources */,
+				2EA3CC37E04AAE8C72B783AF /* PhotosRow.swift in Sources */,
+				5781E738A482C76840B6DFE4 /* SceneDelegate.swift in Sources */,
+				AF62BEE4AD68926D07CF3F4B /* UserData.swift in Sources */,
+				8D3D77007A2D18DA87BBCD7B /* Zyl.swift in Sources */,
+				179B1951ED429C2AAAA9FD26 /* ZylDetailView.swift in Sources */,
+				D02575F050CDB2B4A1A0D9DF /* ZylView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0EE97DE2A4B60C4B59599E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F2B6524CC95601EB8A8E248 /* ZylMaker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B881AEED4C1CC8818D8AFB0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E0783EDA8FC6B170088C54 /* Storage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DAD900DE2B1FFBC2E27FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FB911D6A473DE00CE36D76 /* DateImageClassifier.swift in Sources */,
+				3FF97AF608E1F078A9CC15B1 /* Image.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E492FF719510863EDBBCB85A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43509B98B490964981B282B7 /* ImageClassifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01BBBDAEF6075BA2F5284633 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66D30FF8C1CB05AA0C074228 /* SystemMediaLibrary */;
+			targetProxy = 26D888E1CA182A7D1A1EC3C4 /* PBXContainerItemProxy */;
+		};
+		38A2BDAA02DEF5F6703C5224 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A464B2C12A6CA3029E0F216F /* SimpleZylMaker */;
+			targetProxy = 9EB528215DBDCDB65A11FA78 /* PBXContainerItemProxy */;
+		};
+		4DF23E8852D1359E930316B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBE93E1F769AEE768D1CEE51 /* ZylMaker */;
+			targetProxy = 4A7FD59BB003DD6108CAAB1D /* PBXContainerItemProxy */;
+		};
+		51892E47BF71920C3A3AAD9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C9089276B56BAFF0712FC39 /* MediaLibrary */;
+			targetProxy = 5A3B33B39A82B844DD44D44E /* PBXContainerItemProxy */;
+		};
+		5AE6DE6FCF765F4BC5867E33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBE93E1F769AEE768D1CEE51 /* ZylMaker */;
+			targetProxy = 7522B5F5A4F8DD833F9313BE /* PBXContainerItemProxy */;
+		};
+		61CC1C9A3C3E9390D91C0837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A82E772E6B8D1ECB7BC43A2B /* Storage */;
+			targetProxy = 964DE53F47D96DC81629B494 /* PBXContainerItemProxy */;
+		};
+		835BF1403591A3560B652256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C9089276B56BAFF0712FC39 /* MediaLibrary */;
+			targetProxy = 4C5D16AB53E2EF1408B0B8D7 /* PBXContainerItemProxy */;
+		};
+		8833F301AF62921B93A7C29C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB53420811EFF26E5D0EA22E /* ImageClassifier */;
+			targetProxy = 3C0AD85719AB7AC460E5FC02 /* PBXContainerItemProxy */;
+		};
+		8C99D5C2C001995686F9182C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7FFBD8F1B9BEB9134DDE444 /* Interactor */;
+			targetProxy = C62481B376C0B44E5A46E7C6 /* PBXContainerItemProxy */;
+		};
+		B1657682334336AAB89F740F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB53420811EFF26E5D0EA22E /* ImageClassifier */;
+			targetProxy = B0BC32119C85D521966580E7 /* PBXContainerItemProxy */;
+		};
+		C08C788A9B7960628A62A284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A82E772E6B8D1ECB7BC43A2B /* Storage */;
+			targetProxy = DEC0F09A1783C3B93A984ECD /* PBXContainerItemProxy */;
+		};
+		C117CB7E7C5C27879426A311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01ED5E2E065B339A46EB7795 /* DateImageClassifier */;
+			targetProxy = E4FDAD3AEE6F0F4A31CD55B6 /* PBXContainerItemProxy */;
+		};
+		C78A655E597F1537CDA045F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2322296F63F0F835ECAC8968 /* CoreDataStorage */;
+			targetProxy = 153FF38B9C77F45469F9F842 /* PBXContainerItemProxy */;
+		};
+		CFE1102C056625122003FE37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB53420811EFF26E5D0EA22E /* ImageClassifier */;
+			targetProxy = A6E0EEAFD6969AEEC537533C /* PBXContainerItemProxy */;
+		};
+		EB0D281CA481EF24F3A4EBDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBE93E1F769AEE768D1CEE51 /* ZylMaker */;
+			targetProxy = 39961DC3BD3FAAB360995D60 /* PBXContainerItemProxy */;
+		};
+		EB680DE72B2720BC02A6FB69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C9089276B56BAFF0712FC39 /* MediaLibrary */;
+			targetProxy = B73EEDF280CCBBE5030DE462 /* PBXContainerItemProxy */;
+		};
+		F8A80F34099BEF78DF509CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A82E772E6B8D1ECB7BC43A2B /* Storage */;
+			targetProxy = BE4F25C3FA0F43C1975C4A77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E98EB6147B3D7BD42E48253 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81D2F2DDFCFBEE8AE866448E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A8947F4350F7BB9D444C060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 287SE9N5MQ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A9ECB61693EEAA380CCB44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.SystemMediaLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E3C5ED1C484F2337132CFD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.ImageClassifier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2FCFDFD7AB21FA2E3B6FE952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.Interactor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46B63A8A856C251F684C7AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.MediaLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49C0D015303A433D14360FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Packages/Storage/Sources/CoreDataStorage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.CoreDataStorage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		541D01312C151BB6AE7E852D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.SystemMediaLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A2CFA6DF43FDD6BFA42430B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 287SE9N5MQ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6F7BFD07B872B49343B8BB93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.MediaLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		709814C1549901CCA7EBEE8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7484B965C2E3AF6BACEEB9B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Packages/Storage/Sources/Storage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.Storage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		7A260DA3875B183E6028118E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.DateImageClassifier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B2D0C412769D2C2163E34DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.DateImageClassifier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A78E2F0C79CEC319FD2F05B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACABA9C19A56C038A62716FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.SimpleZylMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEB215D10C62C2C3EABE8958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Packages/Storage/Sources/Storage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.Storage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		B0C7A72223F72600DD21783E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.SimpleZylMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B68C68EF89CD96E41E184B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.ZylMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B99E1FD7F36A0DF4FF4CAA3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.ImageClassifier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C53E7EBDB0A0F656BC9E51FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Packages/Storage/Sources/CoreDataStorage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.CoreDataStorage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		CEB1F73EC9F43077F6843188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.Interactor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB6134559F9510669A7272C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmoya.zyl.ZylMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0104AA8FCDC6D5A563B4824A /* Build configuration list for PBXNativeTarget "Storage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEB215D10C62C2C3EABE8958 /* Debug */,
+				7484B965C2E3AF6BACEEB9B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		060E2B00837E1F1BDE142FDC /* Build configuration list for PBXNativeTarget "SystemMediaLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541D01312C151BB6AE7E852D /* Debug */,
+				2A9ECB61693EEAA380CCB44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		15DF2AB6846A2A26C0C96C85 /* Build configuration list for PBXNativeTarget "ZylMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6134559F9510669A7272C2 /* Debug */,
+				B68C68EF89CD96E41E184B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		38D73FD3F52CAFCFC5F09E55 /* Build configuration list for PBXNativeTarget "SimpleZylMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACABA9C19A56C038A62716FD /* Debug */,
+				B0C7A72223F72600DD21783E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		8254D0CA2CEFE0D77A6B28B8 /* Build configuration list for PBXProject "Zyl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A2CFA6DF43FDD6BFA42430B /* Debug */,
+				0A8947F4350F7BB9D444C060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		906FDFF8C1DCA2DBDFA8D3EC /* Build configuration list for PBXNativeTarget "CoreDataStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C0D015303A433D14360FFA /* Debug */,
+				C53E7EBDB0A0F656BC9E51FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		BD09908485CED98031D0CDB0 /* Build configuration list for PBXNativeTarget "DateImageClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A260DA3875B183E6028118E /* Debug */,
+				8B2D0C412769D2C2163E34DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		C8CD176FCBD373A65EB05975 /* Build configuration list for PBXNativeTarget "Zyl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A78E2F0C79CEC319FD2F05B9 /* Debug */,
+				709814C1549901CCA7EBEE8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		D3BD05957856F036ADCD082D /* Build configuration list for PBXNativeTarget "Interactor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB1F73EC9F43077F6843188 /* Debug */,
+				2FCFDFD7AB21FA2E3B6FE952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		D97631E3533967E0606EF25E /* Build configuration list for PBXNativeTarget "ImageClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99E1FD7F36A0DF4FF4CAA3C /* Debug */,
+				2E3C5ED1C484F2337132CFD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		E13D682F21678EC7D50599A7 /* Build configuration list for PBXNativeTarget "MediaLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B63A8A856C251F684C7AF5 /* Debug */,
+				6F7BFD07B872B49343B8BB93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		302D682B191C70FADFF0ECFD /* Zyl.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CA9198D89F23F790933B68C /* Zyl.xcdatamodel */,
+			);
+			currentVersion = 4CA9198D89F23F790933B68C /* Zyl.xcdatamodel */;
+			path = Zyl.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E93713DEFCAE09CF2E322E65 /* Project object */;
+}

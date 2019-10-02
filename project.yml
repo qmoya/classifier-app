@@ -1,4 +1,6 @@
-name: MyApp
+name: Zyl
+settings:
+  DEVELOPMENT_TEAM: 287SE9N5MQ
 options:
   deploymentTarget:
     iOS: 13.0

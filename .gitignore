@@ -1,6 +1,5 @@
 .DS_Store
 /.build
-/*.xcodeproj
 .vscode/
 *.ipa
 *.xcarchive/
