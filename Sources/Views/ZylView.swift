@@ -15,7 +15,7 @@ struct ZylView: View {
 				.padding(.top, 5)
 
 			NavigationLink(destination: HeroView(hero: zyl.hero!)) {
-				Image("portrait")
+				Image("landscape")
 					.renderingMode(.original)
 					.resizable()
 					.scaledToFill()
